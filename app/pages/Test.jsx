@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Page from '../pages/Page';
-import AboutContainer from '../containers/About';
+//import TestContainer from '../containers/Test';
 
-class About extends Component {
+class Test extends Component {
   getMetaData() {
     return {
       title: this.pageTitle(),
@@ -12,7 +12,7 @@ class About extends Component {
   }
 
   pageTitle = () => {
-    return 'About | reactGo';
+    return 'Test | reactGo';
   };
 
   pageMeta = () => {
@@ -26,14 +26,14 @@ class About extends Component {
   };
 
   render() {
-    console.log('this is about component!!!!');
+    console.log('this is Test component!!!!');
     console.log('this.props=',this.props);
     return (
       <Page {...this.getMetaData()}>
-        <AboutContainer {...this.props} />
+        This is Test put the container here
       </Page>
     );
   }
 }
 
-export default About;
+export default Test;
