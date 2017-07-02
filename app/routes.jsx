@@ -36,6 +36,7 @@ export default (store) => {
       <Route path="dashboard" component={Dashboard} onEnter={requireAuth} />
       <Route path="about" component={About} />
       <Route path="test" component={Test} />
+      <Route path="/test/:make/:id" component={About} />
     </Route>
   );
 };
